@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"  data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,43 +7,44 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="javascript.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="card">
-          <img src="./img/happiness.png" class="card-img-top" alt="...">
-          <div class="card-footer">
-            <small class="text-body-secondary">Last updated 3 mins ago</small>
+    <div id="conjunto" class="row row-cols-3 row-cols-md card border-dark mb-3 flex-wrap">
+        <div class="card text-center text-bg-warning card border-dark rounded-0">
+          <img id="image" src="./img/happiness.png" class="card-img-top opacity-0" alt="...">
+          <div class="card-body">
+            <small class="card-text">Happiness</small>
           </div>
         </div>
-        <div class="card">
-          <img src="./img/tenderness.png" class="card-img-top" alt="...">
-          <div class="card-footer">
-            <small class="text-body-secondary">Last updated 3 mins ago</small>
+        <div class="card text-center text-bg-pink card border-dark rounded-0">
+          <img id="image" src="./img/tenderness.png" class="card-img-top opacity-0" alt="...">
+          <div class="card-body">
+            <small class="card-text">Tenderness</small>
           </div>
         </div>
-        <div class="card">
-          <img src="./img/serenity.png" class="card-img-top" alt="...">
-          <div class="card-footer">
-            <small class="text-body-secondary">Last updated 3 mins ago</small>
+        <div class="card text-center text-bg-success card border-dark3 rounded-0">
+          <img id="image" src="./img/serenity.png" class="card-img-top opacity-0" alt="...">
+          <div class="card-body">
+            <small class="card-text">Serenity</small>
           </div>
         </div>
-        <div class="card">
-            <img src="./img/spirituality.png" class="card-img-top" alt="...">
-            <div class="card-footer">
-              <small class="text-body-secondary">Last updated 3 mins ago</small>
+        <div class="card text-center  text-bg- card border-dark rounded-0">
+            <img id="image" src="./img/spirituality.png" class="card-img-top opacity-0" alt="...">
+            <div class="card-body">
+              <small class="card-text">Spirituality</small>
             </div>
           </div>
-          <div class="card">
-            <img src="./img/sadness.png" class="card-img-top" alt="...">
-            <div class="card-footer">
-              <small class="text-body-secondary">Last updated 3 mins ago</small>
+          <div class="card text-center text-bg-primary card border-primary rounded-0">
+            <img id="image" src="./img/sadness.png" class="card-img-top opacity-0" alt="...">
+            <div class="card-body">
+              <small class="card-text">Sadness</small>
             </div>
           </div>
-          <div class="card">
-            <img src="./img/anger.png" class="card-img-top" alt="...">
-            <div class="card-footer">
-              <small class="text-body-secondary">Last updated 3 mins ago</small>
+          <div class="card text-center text-bg-danger card border-danger rounded-0">
+            <img id="image" src="./img/anger.png" class="card-img-top opacity-0" alt="...">
+            <div class="card-body">
+              <small class="card-text">Anger</small>
             </div>
           </div>
       </div>
