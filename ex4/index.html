@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="height: 100%;">
 
 <head>
     <meta charset="UTF-8">
@@ -9,15 +9,20 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
-<body>
-    <section class="d-flex justify-content-center align-self-center">
-        <div class="card" style="width: 40rem;">
-        <h5 class="card-title">Indicate the English name of this wild animal</h5>
+<body class="h-100 w-100 align-content-center">
+    <section class="d-flex justify-content-center">
+        <div class="card text-center text-bg-warning mb-3" style="width: 40rem;">
+        <br>
+            <h5 class="card-title">Indicate the English name of this wild animal</h5>
             <div class="card-body">
                 <img src="./img/1199px-raccoon-climbing-in-treejpg.webp" class="card-img-top" alt="...">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <br><br>
+                <input type="animal" class="w-50" id="animalInput" aria-describedby="animalInputBox">
+                <br><br>
+                <article>
+                    <button type="button" class="btn btn-dark">Check</button>
+                    <button type="button" class="btn btn-dark">Reset</button>
+                </article>
             </div>
         </div>
     </section>
