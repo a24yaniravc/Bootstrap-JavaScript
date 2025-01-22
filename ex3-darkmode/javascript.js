@@ -8,12 +8,12 @@ image.addEventListener("mouseout", function() {
     image.style.opacity= 0;
 });*/
 
-function incrementOpacity(){
-    let image = document.getElementById("imagen");
-    image.style.opacity=1;
+function incrementOpacity(id) {
+    let image = document.getElementById(id);
+    image.style.opacity = 1;
 }
 
-function decreaseOpacity(){
-    let image = document.getElementById("imagen");
-    image.style.opacity=0;
+function decreaseOpacity(id) {
+    let image = document.getElementById(id);
+    image.style.opacity = 0;
 }
