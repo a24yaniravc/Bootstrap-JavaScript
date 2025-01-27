@@ -7,23 +7,20 @@
     <title>Wild animal</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="javascript.js"></script>
 </head>
 
 <body class="h-100 w-100 align-content-center">
-    <section class="d-flex justify-content-center">
-        <div class="card text-center text-bg-warning mb-3" style="width: 40rem;">
-        <br>
+    <section class="d-flex justify-content-center h-50">
+        <div class="card d-flex align-items-center justify-content-around text-center text-bg-warning mb-3" style="width: 40rem;">
             <h5 class="card-title">Indicate the English name of this wild animal</h5>
-            <div class="card-body">
-                <img src="./img/1199px-raccoon-climbing-in-treejpg.webp" class="card-img-top" alt="...">
-                <br><br>
-                <input type="animal" class="w-50" id="animalInput" aria-describedby="animalInputBox">
-                <br><br>
-                <article>
-                    <button type="button" class="btn btn-dark">Check</button>
-                    <button type="button" class="btn btn-dark">Reset</button>
-                </article>
-            </div>
+            <img src="./img/1199px-raccoon-climbing-in-treejpg.webp" class="card-img-top w-50" alt="...">
+            <input type="animal" class="w-50" id="animalInput" aria-describedby="animalInputBox">
+            <article>
+                <button type="button" class="btn btn-dark" onclick="checkResponse()">Check</button>
+                <button type="button" class="btn btn-dark" onclick="reset()">Reset</button>
+            </article>
+            <p id="respuesta" class="opacity-0 rounded bg-danger border border-5 border-danger">Incorrect! Try again!</p>
         </div>
     </section>
 </body>

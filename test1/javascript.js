@@ -1,4 +1,4 @@
-///alert("This is JavaScript"); // Popup de alerta
+// alert("This is JavaScript"); // Popup de alerta
 
 function changeBg(){
     let paragraph = document.getElementById("para");

@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <script>
+        function changecolor() {
+            header1.classList.add("text-secondary");
+        }
+
+        function changeBgParagraph() {
+            let p = document.querySelector("p>strong").style.backgroundColor = "blue";
+        }
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
 </head>
-<body>
-    
+
+<body class="d-flex flex-column" onload="changeBgParagraph()">
+    <h1 id="header1" onmouseover="changecolor()" class="text-primary bg-primary-subtle">Bootstrap</h1>
+    <p class="text-danger pt-3 w-50">This is a paragraph</p>
+    <h2>This is a subtitle</h2>
+    <p>My name is <strong>Yan</strong></p>
+    <p>Today is not a sunny day</p>
 </body>
+
 </html>
