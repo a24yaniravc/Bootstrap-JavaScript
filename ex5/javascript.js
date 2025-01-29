@@ -1,0 +1,5 @@
+let ans_1 = document.getElementById("asw1")
+let ans_2 = document.getElementById("asw2")
+let ans_3 = document.getElementById("asw3")
+let ans_4 = document.getElementById("ans4")
+let ans_5 = document.getElementById("ans5")
