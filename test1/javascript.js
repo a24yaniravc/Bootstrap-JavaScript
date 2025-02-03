@@ -32,3 +32,17 @@ function seeInfo(){
 }
 ---------------------------------------------
 */
+
+function showInfo(){
+    let user = '{"name":"María", "Surnames":"Veiga Ramírez"}';
+
+    let userObj = JSON.parse(user);
+    alert(userObj.name);
+}
+
+function showRestInfo(){
+    fetch('https://api.restful-api.dev/objects?id=1')
+    .then(response=>response.json())
+    .then(data => alert(data[0].name))
+    .catch(error => alert(error));
+}

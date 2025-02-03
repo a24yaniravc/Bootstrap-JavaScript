@@ -1,0 +1,6 @@
+.card{
+    background-color:var(--bs-teal);
+}
+.card:last-of-type{
+    background-color:var(--bs-indigo);
+}
