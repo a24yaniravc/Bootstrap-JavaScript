@@ -4,6 +4,8 @@ function showInfo() {
     fetch('https://api.slingacademy.com/v1/sample-data/users/' + random)
         .then(response => response.json())
         .then(data => { 
+
+        data.style.color = "white"
             
         document.getElementById('text1').innerHTML = data.user.first_name;
         document.getElementById('text2').innerHTML = 'Job: ' + data.user.job;
