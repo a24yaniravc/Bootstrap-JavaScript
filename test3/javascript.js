@@ -56,6 +56,9 @@ function loadUserName() {
     fetch('https://jsonplaceholder.typicode.com/users')
     .then(response => response.json())
     .then(data => {
-        user1.innerText = data[num].name;
+        if (num%2==0) { user1.innerText = data[num].name; }
+        else {
+            user1.innerText = data[num].id;
+        }
     })
 }
